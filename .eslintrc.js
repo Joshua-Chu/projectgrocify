@@ -42,5 +42,16 @@ module.exports = {
         "react/jsx-props-no-spreading": "off",
         "no-use-before-define": "off",
         "@typescript-eslint/no-use-before-define": ["error"],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                js: "never",
+                jsx: "never",
+                ts: "never",
+                tsx: "never",
+            },
+        ],
+        "import/prefer-default-export": "off",
     },
 };
