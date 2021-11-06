@@ -1,4 +1,9 @@
 import { useState } from "react";
+import styled from "styled-components";
+
+const StyledHeaders = styled.h1({
+    color: "green",
+});
 
 const HomePage = () => {
     const [count, setCount] = useState<number>(0);
@@ -15,7 +20,7 @@ const HomePage = () => {
 
     return (
         <div>
-            <h1>Count: {count}</h1>
+            <StyledHeaders>Count: {count}</StyledHeaders>
 
             <div>
                 <button onClick={incrementCountHandler} type="button">
